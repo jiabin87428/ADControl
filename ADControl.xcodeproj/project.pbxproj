@@ -15,6 +15,7 @@
 		42A0F7641F70E19A0006D115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A0F7621F70E19A0006D115 /* LaunchScreen.storyboard */; };
 		42A0F76F1F70E19A0006D115 /* ADControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0F76E1F70E19A0006D115 /* ADControlTests.m */; };
 		42A0F77A1F70E19A0006D115 /* ADControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0F7791F70E19A0006D115 /* ADControlUITests.m */; };
+		42A0F7891F70E1EC0006D115 /* UIControl+ADControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A0F7881F70E1EC0006D115 /* UIControl+ADControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		42A0F7751F70E19A0006D115 /* ADControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A0F7791F70E19A0006D115 /* ADControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADControlUITests.m; sourceTree = "<group>"; };
 		42A0F77B1F70E19A0006D115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A0F7871F70E1EC0006D115 /* UIControl+ADControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ADControl.h"; sourceTree = "<group>"; };
+		42A0F7881F70E1EC0006D115 /* UIControl+ADControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ADControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				42A0F7581F70E19A0006D115 /* AppDelegate.m */,
 				42A0F75A1F70E19A0006D115 /* ViewController.h */,
 				42A0F75B1F70E19A0006D115 /* ViewController.m */,
+				42A0F7871F70E1EC0006D115 /* UIControl+ADControl.h */,
+				42A0F7881F70E1EC0006D115 /* UIControl+ADControl.m */,
 				42A0F75D1F70E19A0006D115 /* Main.storyboard */,
 				42A0F7601F70E19A0006D115 /* Assets.xcassets */,
 				42A0F7621F70E19A0006D115 /* LaunchScreen.storyboard */,
@@ -207,7 +212,7 @@
 				TargetAttributes = {
 					42A0F7501F70E19A0006D115 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8B7PN3Y7JA;
+						DevelopmentTeam = 43959S3Q89;
 						ProvisioningStyle = Automatic;
 					};
 					42A0F7691F70E19A0006D115 = {
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A0F7891F70E1EC0006D115 /* UIControl+ADControl.m in Sources */,
 				42A0F75C1F70E19A0006D115 /* ViewController.m in Sources */,
 				42A0F7591F70E19A0006D115 /* AppDelegate.m in Sources */,
 				42A0F7561F70E19A0006D115 /* main.m in Sources */,
@@ -429,7 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8B7PN3Y7JA;
+				DEVELOPMENT_TEAM = 43959S3Q89;
 				INFOPLIST_FILE = ADControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lijiabin.ADControl;
@@ -441,7 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8B7PN3Y7JA;
+				DEVELOPMENT_TEAM = 43959S3Q89;
 				INFOPLIST_FILE = ADControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lijiabin.ADControl;

@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIControl+ADControl.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *singleClickButton;
+@property (weak, nonatomic) IBOutlet UIButton *multipleTriggerButton;
+
+@property (nonatomic) int num;
 
 @end
 
@@ -16,9 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self addButtonEvent];
 }
 
+- (void)addButtonEvent{
+    [self.singleClickButton addAction:^{
+        NSLog(@"单击");
+    } forControlEvents:UIControlEventTouchUpInside];
+    
+    __weak __typeof(self) weakSelf = self;
+    [self.multipleTriggerButton addIntervalAction:0.3 withAction:^{
+        weakSelf.num++;
+        NSLog(@"%d",weakSelf.num);
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
